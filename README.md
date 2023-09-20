@@ -37,7 +37,8 @@ or depending on your OS configuration
 For a more detailed installation process follow steps laid out [here](https://www.psycopg.org/docs/install.html).
 
 ***configparser***
-For confiparser I didn't need to install any modules but in the event that you need it you can use the following terminal command:
+For confiparser 
+I didn't need to install any modules but in the event that you need it you can use the following terminal command:
 
     pip3 install configparser
 
