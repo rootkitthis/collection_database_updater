@@ -24,27 +24,12 @@ The basis of this project is to use a python script that takes input from myself
 
 # Installation of Modules
 
-***psycopg2***
-For me I was able to successfully install pyscopg2 by running the following command via Terminal: 
+ - psycopg2
+	 - For me I was able to successfully install pyscopg2 by running the following command via Terminal: `pip3 install pyscopg2` or `pip install psycopg2`depending on your OS configuration.
+	 - For a more detailed installation process follow steps laid out [here](https://www.psycopg.org/docs/install.html).
 
-    pip3 install pyscopg2
-
-or depending on your OS configuration
-
-    pip install psycopg2
- 
-
-For a more detailed installation process follow steps laid out [here](https://www.psycopg.org/docs/install.html).
-
-***configparser***
-For confiparser 
-I didn't need to install any modules but in the event that you need it you can use the following terminal command:
-
-    pip3 install configparser
-
-or depending on your OS configuration 
-
-    pip install configparser
+ - configparser
+	 - For confiparser I didn't need to install any modules but in the event that you need it you can use the following terminal command: `pip3 install configparser` or `pip install configparser`depending on your OS Configuration. 
 
 # The Setup
 
