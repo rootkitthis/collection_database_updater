@@ -5,6 +5,13 @@ For a long time I have used an excel file to keep track of all the comic books a
 
 The basis of this project is to use a python script that takes input from myself based on various factors and updates a database stored on a postgreSQL server that is stored locally on my network. 
 
+# Tools and Environment configuration I am using
+
+ - MacOS
+ - Brackets - used to create database.ini
+ - Proxmox - used to house postgreSQL server running via CasaOS 
+ - Visual Studio Code - Used to create python scripts 
+
 # Python Modules Needed
 
  - psycopg2
@@ -17,7 +24,26 @@ The basis of this project is to use a python script that takes input from myself
 
 # Installation of Modules
 
+***psycopg2***
+For me I was able to successfully install pyscopg2 by running the following command via Terminal: 
+
     pip3 install pyscopg2
+
+or depending on your OS configuration
+
+    pip install psycopg2
+ 
+
+For a more detailed installation process follow steps laid out [here](https://www.psycopg.org/docs/install.html).
+
+***configparser***
+For confiparser I didn't need to install any modules but in the event that you need it you can use the following terminal command:
+
+    pip3 install configparser
+
+or depending on your OS configuration 
+
+    pip install configparser
 
 # The Setup
 
