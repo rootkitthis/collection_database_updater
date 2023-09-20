@@ -77,4 +77,3 @@ I store this file in the same folder as the database.ini file
 Reference [this](https://github.com/rootkitthis/collection_database_updater/blob/main/collection_database_updater.py) for the full code.
 
 This code appears to be a Python script for updating two different types of databases: one for movies and another for comic books. It uses the `psycopg2` library for connecting to a PostgreSQL database and a separate configuration file (`config.py`) to store database connection parameters. The script takes user input to add entries to either the movie or comic book database, and it provides error handling for database operations. Additionally, it handles invalid user input and prompts the user to try again.
-
