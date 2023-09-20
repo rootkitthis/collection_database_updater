@@ -1,3 +1,4 @@
+
 # Collection Database Updater
 I created this as a way to keep track of all the things I collect such as movies and comic books. 
 
@@ -31,13 +32,35 @@ The basis of this project is to use a python script that takes input from myself
  - configparser
 	 - For confiparser I didn't need to install any modules but in the event that you need it you can use the following terminal command: `pip3 install configparser` or `pip install configparser`depending on your OS Configuration. 
 
-# The Setup
+# PostgreSQL configuration
 
-I created a database.ini file so I can easily manipulate server configurations with minimal python code changes.   
+I cleaned all my current spreadsheets housing my entire movie collection an exported the file as a .csv file.  I then setup a table for movies on my database with the following columns and dat types : 
 
+ - title = text data type
+ - disctype = text data type
+ - genre = text data type 
+ - movierating = text data type 
+ - releaseyear = integer data type*
+
+I then imported the .csv file so all my data is viewable via sql. 
+
+# Database.ini Setup
+I started by using brackets to create a database.ini file.  This file will be used so I can easily manipulate server information without needing to edit any of my python files that use that file. 
+
+The database.ini file is a simple file that consists of the following information:
 
 -   **database**: the name of the database we want to connect to.
 -   **host**: refers to the database server's IP address or URL.
 -   **user**: refers to the name of the PostgreSQL user.
 -   **password**: password that matches the PostgreSQL user.
 -   **port**: the PostgreSQL server's port number on localhost – default is typically 5432.
+
+The final file looked like (*fields are manipulated for security/privacy reasons)*: 
+
+    [postgresql]
+    host=192.168.1.25
+    port=5432
+    database=filler
+    user=password1235
+
+I then saved this file in a folder on my desktop. 
